@@ -1,43 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>How to Use Decorators to Validate Input</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  How to Use Decorators to Validate Input | My Test Website
+</title>
+  <link rel="canonical" href="/how-to-use-decorators-to-validate-input.html">
+
+
+  <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="/theme/css/theme.css">
+
+  
+  <meta name="description" content="Python is rich in resources that can shorten the time it takes to develop new programs and simplify repetitive tasks. Decorators are one of such elements but more often than not they are not considered by less experienced developers. Adding decorators to the syntactic toolbox can be of great use …">
+
+
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">My Test Website </a></h1>
-                <nav><ul>
-                    <li><a href="/category/base-category.html">Base Category</a></li>
-                    <li class="active"><a href="/category/misc.html">misc</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
+<body>
+  <header class="header">
+    <div class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="/">My Test Website</a></h1>
+      <p class="text-muted">Subtitle For My Test Website</p>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+          <li class="list-inline-item"><a href="http://python.org/" target="_blank">Python.org</a></li>
+          <li class="list-inline-item"><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+          <li class="list-inline-item"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  How to Use Decorators to Validate Input
+</h1>
+      <hr>
+  <article class="article">
     <header>
-      <h1 class="entry-title">
-        <a href="/how-to-use-decorators-to-validate-input.html" rel="bookmark"
-           title="Permalink to How to Use Decorators to Validate Input">How to Use Decorators to Validate Input</a></h1>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2018-05-04T11:40:40.490376+02:00">
+          <i class="fa fa-clock-o"></i>
+          vr 04 mei 2018
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="/category/misc.html">misc</a>
+        </li>
+          <li class="list-inline-item">
+            <i class="fa fa-user-o"></i>
+              <a href="/author/aquiles-carattino.html">Aquiles Carattino</a>          </li>
+      </ul>
     </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-05-04T11:40:40.490376+02:00">
-                Published: vr 04 mei 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/aquiles-carattino.html">Aquiles Carattino</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->      <p>Python is rich in resources that can shorten the time it takes to develop new programs and simplify repetitive tasks. Decorators are one of such elements but more often than not they are not considered by less experienced developers. Adding decorators to the syntactic toolbox can be of great use in different contexts, and in this article, we are going to discuss how can they help you when communicating with a device. The example code can be found in our <a class="reference external" href="https://github.com/uetke/website_content/tree/master/example_code/Examples_Decorators">Github repository</a>.</p>
+    <div class="content">
+      <p>Python is rich in resources that can shorten the time it takes to develop new programs and simplify repetitive tasks. Decorators are one of such elements but more often than not they are not considered by less experienced developers. Adding decorators to the syntactic toolbox can be of great use in different contexts, and in this article, we are going to discuss how can they help you when communicating with a device. The example code can be found in our <a class="reference external" href="https://github.com/uetke/website_content/tree/master/example_code/Examples_Decorators">Github repository</a>.</p>
 <p>Decorators in Python are nothing more than functions that take as arguments other functions. They appear with an <tt class="docutils literal">&#64;</tt> in front of them right above a function (or a method within a class). Let's quickly recap how functions work in Python and how to use them. Imagine you want to compute the average of two values. We can develop a function for it:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
    <span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
@@ -168,37 +192,25 @@
 <p>In this article, we have shown a couple of very basic examples that can be greatly improved. If you have ever encountered decorators and didn't understand how to use them, or you are looking for more specific information, leave your message in the comment section below and we will use your feedback to write a follow up article specifically designed to answer your questions.</p>
 </div>
 
-    </div><!-- /.entry-content -->
-
+    </div>
   </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+    </div>
+  </div>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+  <footer class="footer">
+    <div class="container">
+<div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="/authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="/archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="/categories.html">Categories</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
 </body>
+
 </html>
